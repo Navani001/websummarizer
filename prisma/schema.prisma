@@ -1,0 +1,28 @@
+// This is your Prisma schema file for the CrimeX project
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// User authentication and roles
+model Login {
+  id                Int            @id @default(autoincrement())
+  name              String
+  email             String         @unique
+  password          String         @default("123")
+  role              String         @default("public")
+  logo              String?
+  policeStationId   Int?
+  isDeleted         Boolean        @default(false)
+  createdAt         DateTime       @default(now())
+  updatedAt         DateTime       @default(now()) @updatedAt
+}
+
+// Police station information
+
+
