@@ -170,10 +170,7 @@ class WebsiteChatBot {
   }
 }
 
-// Export for use in other modules
 export { WebsiteChatBot, chatWithWebsite, processWebsite };
-
-
 
 import fastify from './src/middleware/jwt';
 import {  LoginUserRoute } from './src/routes/auth';
