@@ -192,10 +192,7 @@ class WebsiteChatBot {
 // Export for use in other modules
 export { WebsiteChatBot, chatWithWebsite, processWebsite };
 
-// Run example if this file is executed directly
-if (require.main === module) {
-  runExample();
-}
+
 
 import fastify from './src/middleware/jwt';
 import {  LoginUserRoute } from './src/routes/auth';
