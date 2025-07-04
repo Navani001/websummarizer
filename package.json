@@ -37,6 +37,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon ./index.ts",
+    "build": "npm i",
     "seed": "ts-node prisma/seed.ts",
     "postinstall": "prisma generate",
     "migrate": "prisma migrate dev --name init",
