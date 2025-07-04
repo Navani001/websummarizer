@@ -141,25 +141,6 @@ async function chatWithWebsite(url: string, userQuery: string) {
   }
 }
 
-// Example usage
-const runExample = async () => {
-  try {
-    const result = await chatWithWebsite(
-      'https://en.wikipedia.org/wiki/Game',
-      'What is the purpose of this website?'
-    );
-    
-    console.log('\n=== Chat Result ===');
-    console.log('Query:', result.query);
-    console.log('Response:', result.response);
-    console.log('\nRelevant chunks used:');
-    result.relevantChunks.forEach((chunk, i) => {
-      console.log(`${i + 1}. Similarity: ${chunk.similarity} - ${chunk.content}`);
-    });
-  } catch (error) {
-    console.error('Example failed:', error);
-  }
-};
 
 // Interactive chat function for continuous conversation
 class WebsiteChatBot {
