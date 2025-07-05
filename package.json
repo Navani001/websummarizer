@@ -17,7 +17,7 @@
     "@fastify/sensible": "^6.0.3",
     "@google/genai": "^1.8.0",
     "@google/generative-ai": "^0.24.1",
-    "@langchain/core": "^0.3.61",
+    "@langchain/core": "^0.3.62",
     "@langchain/google-genai": "^0.2.14",
     "@langchain/textsplitters": "^0.1.0",
     "@prisma/client": "^6.4.1",
